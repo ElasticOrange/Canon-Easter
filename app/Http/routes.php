@@ -11,5 +11,8 @@
 |
 */
 
-Route::get('admin', 'Admin\AdminController@getIndex');
-Route::post('admin', 'Admin\AdminController@postIndex');
+Route::get('admin/login', 'Admin\AdminLoginController@getIndex');
+Route::post('admin/login', 'Admin\AdminLoginController@postIndex');
+
+Route::resource('/admin/user', 'Admin\AdminUserController');
+Route::get('admin/entry', 'Admin\AdminEntryController@index');

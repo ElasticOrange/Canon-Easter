@@ -8,7 +8,7 @@ use App\Http\Controllers\Controller;
 //use Illuminate\Http\Request;
 use Request;
 
-class AdminController extends Controller {
+class AdminLoginController extends Controller {
 
 	public function getIndex()
 	{
@@ -22,11 +22,11 @@ class AdminController extends Controller {
         if ($admin)
         {
             Session::put('admin', $admin);
-            return 'logat';
+            return view('admin.entry.index');
         }
         else
         {
-            return 'nelogat';
+            return view('admin.login.index');
         }
 	}
 
