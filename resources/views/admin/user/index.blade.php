@@ -22,9 +22,9 @@
                 <td>{{ $user->username }}</td>
                 <td>{{ $user->created_at->format('d F Y,  h:ia') }}</td>
                 <td>
-                    <a href="/admin/user/{{ $user->_id }}/edit" class="btn btn-info pull-left" style="margin-right: 3px;">Edit</a>
+                    <a href="/admin/user/{{ $user->id }}/edit" class="btn btn-info pull-left" style="margin-right: 3px;">Edit</a>
                     @if($users->count() > 1)
-                    {!! Form::open(['url' => '/admin/user/' . $user->_id, 'method' => 'DELETE']) !!}
+                    {!! Form::open(['url' => '/admin/user/' . $user->id, 'method' => 'DELETE']) !!}
                     {!! Form::submit('Delete', ['class' => 'btn btn-danger', 'data-confirm' => 'true'])!!}
                     {!! Form::close() !!}
                     @endif
@@ -39,8 +39,6 @@
 <a href="/admin/user/create" class="btn btn-success">Adauga User</a>
  
 </div>
-@section('js')
-    <script src="/assets/js/index.js"></script>
-@stop
+<script src="/js/index.js"></script>
     
 @stop

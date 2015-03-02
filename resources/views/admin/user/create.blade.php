@@ -29,7 +29,6 @@
     {!! Form::close() !!}
  
 </div>
-@section('js')
-    <script src="/resources/assets/js/create.js"></script>
-@stop
+<script src="/js/create.js"></script>
+
 @stop

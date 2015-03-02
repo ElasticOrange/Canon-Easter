@@ -14,5 +14,24 @@
 Route::get('admin/login', 'Admin\AdminLoginController@getIndex');
 Route::post('admin/login', 'Admin\AdminLoginController@postIndex');
 
-Route::resource('/admin/user', 'Admin\AdminUserController');
-Route::get('admin/entry', 'Admin\AdminEntryController@index');
+Route::group(
+    array('before' => 'admin_auth')
+    , function()
+    {
+		Route::resource('/admin/user', 'Admin\AdminUserController');
+		Route::get('/admin/', 'Admin\AdminController@index');
+		Route::get('admin/entry', 'Admin\AdminEntryController@index');
+	}
+);
+
+// The filter that checks if the user is logged in
+Route::filter(
+	'admin_auth'
+    , function()
+    {
+        if (!Session::get('admin'))
+        {
+            return redirect('/admin/login');
+        }
+    }
+);

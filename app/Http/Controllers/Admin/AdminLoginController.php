@@ -30,11 +30,11 @@ class AdminLoginController extends Controller {
         }
 	}
 
-	public function getLogout()
+	public function logout()
     {
         Session::forget('admin');
 
-        return 'ai fost delogat';
+        return redirect('admin/login');
     }
 
 }

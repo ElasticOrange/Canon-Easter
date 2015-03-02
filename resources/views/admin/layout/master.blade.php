@@ -11,5 +11,6 @@
 			@include('admin.layout.header')
 			@yield('content')
 		</div>
+		@yield('js')
 	</body>
 </html>
