@@ -1,5 +1,6 @@
 <?php namespace App\Http\Controllers\Admin;
 
+use Illuminate\Http\Response;
 use Session;
 use App\Admin;
 use App\Http\Requests;
@@ -47,14 +48,14 @@ public function index()
 
             $user->save();
             
-            return Response::json(array(
+            return response()->json(array(
                   'status' => 'OK'
                 , 'message' => 'Userul nu exista'
             ));
         }
         else
         {
-            return Response::json(array(
+            return response()->json(array(
                   'status' => 'not OK'
                 , 'message' => 'Userul exista'
             ));

@@ -40,7 +40,7 @@
  
 </div>
 @section('js')
-    <script src="/assets/javascripts/index.js"></script>
+    <script src="/assets/js/index.js"></script>
 @stop
     
 @stop

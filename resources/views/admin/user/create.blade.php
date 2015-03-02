@@ -30,6 +30,6 @@
  
 </div>
 @section('js')
-    <script src="/assets/javascripts/create.js"></script>
+    <script src="/resources/assets/js/create.js"></script>
 @stop
 @stop
