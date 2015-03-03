@@ -11,7 +11,7 @@
  
     <h1><i class='fa fa-user'></i> Editeaza User</h1>
  
-    {!! Form::model($user, ['role' => 'form', 'url' => '/admin/user/' . $user->_id, 'method' => 'PUT']) !!}
+    {!! Form::model($user, ['role' => 'form', 'url' => '/admin/user/' . $user->id, 'method' => 'PUT']) !!}
  
     <div class='form-group'>
         {!! Form::label('username', 'Username') !!}

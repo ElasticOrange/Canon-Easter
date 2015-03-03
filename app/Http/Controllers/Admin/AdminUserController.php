@@ -5,7 +5,6 @@ use Session;
 use App\Admin;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-
 //use Illuminate\Http\Request;
 use Request;
 
@@ -48,17 +47,17 @@ public function index()
 
             $user->save();
             
-            return response()->json(array(
-                  'status' => 'OK'
-                , 'message' => 'Userul nu exista'
-            ));
+            return response()->json([
+                              		  'status' => 'OK'
+                            		, 'message' => 'Userul nu exista'
+                        			]);
         }
         else
         {
-            return response()->json(array(
-                  'status' => 'not OK'
-                , 'message' => 'Userul exista'
-            ));
+            return response()->json([
+         		                      'status' => 'not OK'
+                		            , 'message' => 'Userul exista'
+                        			]);
         }
 	}
 

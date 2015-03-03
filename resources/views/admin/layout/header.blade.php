@@ -18,7 +18,7 @@
                 <li class=""><a href="/admin/user">Adauga Admin</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="/admin/login">Logout</a></li>
+                <li><a href="/admin/entry/logout">Logout</a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div><!--/.container-fluid -->

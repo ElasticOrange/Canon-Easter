@@ -39,6 +39,8 @@
 <a href="/admin/user/create" class="btn btn-success">Adauga User</a>
  
 </div>
+@section('js')
 <script src="/js/index.js"></script>
-    
+@stop
+
 @stop

@@ -9,8 +9,17 @@ use App\Http\Controllers\Controller;
 use Request;
 
 class AdminEntryController extends Controller {
+	
 	public function index()
 	{
 		return view('admin.entry.index');
 	}
+
+	public function getLogout()
+    {
+        Session::forget('admin');
+
+        return redirect('/admin/login');
+    }
+
 }

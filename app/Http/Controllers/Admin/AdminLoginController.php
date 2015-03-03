@@ -30,7 +30,7 @@ class AdminLoginController extends Controller {
         }
 	}
 
-	public function logout()
+	public function getLogout()
     {
         Session::forget('admin');
 

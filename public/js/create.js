@@ -28,7 +28,8 @@ $(document).ready(function()
         var user = 
         {
             username: $('[data-username=true]').val(),
-            password: $('[data-password=true]').val()
+            password: $('[data-password=true]').val(),
+            _token: $('[type=hidden]').val()
         };
         return $.ajax(
             {
