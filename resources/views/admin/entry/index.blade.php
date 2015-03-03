@@ -3,7 +3,7 @@
 @section('content')
 <h1>Lista de useri inscrisi:</h1><br />
 @foreach($entries as $entry)
-		<p>{{ $entry }}</p>
+		<p>{{ $entry->nume }}</p>
 @endforeach
 
 @stop

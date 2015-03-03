@@ -11,6 +11,7 @@ class Entry extends Model {
         , 'prenume'
         , 'adresa'
         , 'email'
+        , 'telefon'
     ];
 
 }

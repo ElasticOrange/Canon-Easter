@@ -15,10 +15,10 @@
             <ul class="nav navbar-nav">
                 <li class=""><a href="/admin/entry">Aproba inscrieri</a></li>
                 <li class=""><a href="/admin/entry/disapprove">Dezaproba inscrieri</a></li>
-                <li class=""><a href="/admin/user">Adauga Admin</a></li>
+                <li class=""><a href="/admin/entry/logout">Adauga Admin</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="/admin/entry/logout">Logout</a></li>
+                <li><a href="/admin">Logout</a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div><!--/.container-fluid -->
