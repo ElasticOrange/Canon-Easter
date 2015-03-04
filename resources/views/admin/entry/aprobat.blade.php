@@ -1,7 +1,7 @@
 @extends('admin.layout.master')
 
 @section('content')
-<h2>Sunt listate toate persoanele inscrise</h2>
+<h2>Sunt listati castigatorii</h2>
 <hr/><br>
 <div class="row">
         <div class="col-md-12">
@@ -29,13 +29,6 @@
                         </td>
                         <td width="300">
                                 <img src="{{ action('Admin\AdminEntryController@getImage', $entry->id)  }}" class="img-rounded" width="200" />
-                        </td>
-                        <td>
-                            <input type="hidden" name="_token" data-hidden="true" value="{{ csrf_token() }}">
-                            <form action="/admin/entry" method="put" data-form_approve="true">
-                                <input type="hidden" name="id" value="{{ $entry->id }}" />
-                                <input type="submit" value="Approve" class="btn btn-inverse"/>
-                            </form>
                         </td>
                     </tr>
                     @endforeach

@@ -24,6 +24,38 @@ class AdminEntryController extends Controller {
     	return (new Response($photo, 200))
               ->header('Content-Type', 'image/png');
 	}
+
+    public function getAprobat()
+    {
+        $entries = Entry::where('approved', true)->oldest()->get();
+        return view('admin.entry.aprobat', compact('entries'));
+    }
+
+    public function putApprove()
+    {
+        $entry = Entry::find(Request::input('id'));
+        $entry->approved = 1;
+        $entry->save();
+
+        return response()->json(array(
+            'status' => 'OK'
+            , 'error' => ''
+            , 'id' => Request::input('id')
+        ));
+    }
+    
+    // public function putDisapprove()
+    // {
+    //     $entry = Entry::find(Request::input('id'));
+    //     $entry->approved = false;
+    //     $entry->save();
+
+    //     return response()->json(array(
+    //         'status' => 'OK'
+    //         , 'error' => ''
+    //         , 'id' => Input::get('id')
+    //     ));
+    // }
 	
 	public function getLogout()
     {
@@ -31,5 +63,4 @@ class AdminEntryController extends Controller {
 
         return redirect('/admin/login');
     }
-
 }
