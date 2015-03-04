@@ -13,7 +13,7 @@ class AdminEntryController extends Controller {
 	
 	public function getIndex()
 	{
-		$entries = Entry::all();
+		$entries = Entry::where('approved', false)->oldest()->get();
 		return view('admin.entry.index', compact('entries')); 
 	}
 
@@ -34,7 +34,7 @@ class AdminEntryController extends Controller {
     public function putApprove()
     {
         $entry = Entry::find(Request::input('id'));
-        $entry->approved = 1;
+        $entry->approved = true;
         $entry->save();
 
         return response()->json(array(
@@ -44,18 +44,18 @@ class AdminEntryController extends Controller {
         ));
     }
     
-    // public function putDisapprove()
-    // {
-    //     $entry = Entry::find(Request::input('id'));
-    //     $entry->approved = false;
-    //     $entry->save();
+    public function putDisapprove()
+    {
+        $entry = Entry::find(Request::input('id'));
+        $entry->approved = false;
+        $entry->save();
 
-    //     return response()->json(array(
-    //         'status' => 'OK'
-    //         , 'error' => ''
-    //         , 'id' => Input::get('id')
-    //     ));
-    // }
+        return response()->json(array(
+            'status' => 'OK'
+            , 'error' => ''
+            , 'id' => Request::input('id')
+        ));
+    }
 	
 	public function getLogout()
     {

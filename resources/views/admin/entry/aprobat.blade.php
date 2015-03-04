@@ -30,6 +30,13 @@
                         <td width="300">
                                 <img src="{{ action('Admin\AdminEntryController@getImage', $entry->id)  }}" class="img-rounded" width="200" />
                         </td>
+                        <td>
+                            <input type="hidden" name="_token" data-hidden="true" value="{{ csrf_token() }}">
+                            <form action="/admin/entry/aprobat" method="put" data-form_approve="true">
+                                <input type="hidden" name="id" value="{{ $entry->id }}" />
+                                <input type="submit" value="Disapprove" class="btn btn-inverse"/>
+                            </form>
+                        </td>
                     </tr>
                     @endforeach
                 </tbody>
