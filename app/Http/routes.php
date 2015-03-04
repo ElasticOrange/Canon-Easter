@@ -11,8 +11,8 @@
 |
 */
 
-Route::get('entry', 'EntryController@getIndex');
-Route::post('entry', 'EntryController@postIndex');
+Route::controller('entry', 'EntryController');
+Route::get('admin/entry/photo/{id}', 'Admin\AdminEntryController@getImage');
 
 Route::get('admin/login', 'Admin\AdminLoginController@getIndex');
 Route::post('admin/login', 'Admin\AdminLoginController@postIndex');

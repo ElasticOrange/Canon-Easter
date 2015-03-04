@@ -22,7 +22,7 @@ class AdminLoginController extends Controller {
         if ($admin)
         {
             Session::put('admin', $admin);
-            return view('admin.entry.index');
+            return redirect('admin/entry');
         }
         else
         {

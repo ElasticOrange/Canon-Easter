@@ -3,7 +3,8 @@
 @section('content')
 <h1>Toate campurile sunt obligatorii</h1><br />
 
-<form action="/entry" method="post" data-form_entry="true">
+<form action="/entry" enctype="multipart/form-data" method="post">
+	<input type="hidden" name="_token" value="{{ csrf_token() }}">
 	<div class="row">
 		<div class="col-xs-5">
 			<input type="text" name="nume" class="form-control" placeholder="Nume">
@@ -20,16 +21,12 @@
 
 	<input type="email" name="email" class="form-control" placeholder="Email"><br>
 
-	<input type="hidden" name="_token" value="{{ csrf_token() }}">
-	
+
+	<div class="form-group">
+		<label for="exampleInputFile">Atasati poza bonului de casa</label>
+		<input type="file" name="photo" id="exampleInputFile">
+	</div>
 	<button type="submit" class="btn btn-default">Submit</button>
 </form>
 
-<!-- <form>
-	<div class="form-group">
-		<label for="exampleInputFile">Atasati poza bonului de casa</label>
-		<input type="file" id="exampleInputFile">
-	</div>
-</form>
- -->
  @stop
