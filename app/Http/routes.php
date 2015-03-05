@@ -14,18 +14,21 @@
 Route::get('entry', 'EntryController@getIndex');
 Route::post('entry', 'EntryController@postIndex');
 
-Route::get('admin/entry/photo/{id}', 'Admin\AdminEntryController@getImage');
-Route::get('admin/entry/aprobat', 'Admin\AdminEntryController@getAprobat');
-Route::put('admin/entry/aprobat', 'Admin\AdminEntryController@putDisapprove');
-Route::get('admin/entry', 'Admin\AdminEntryController@getIndex');
-Route::put('admin/entry', 'Admin\AdminEntryController@putApprove');
+Route::group(['middleware' => 'manager'], function()
+{
+	Route::get('admin/entry/photo/{id}', 'Admin\AdminEntryController@getImage');
+	Route::get('admin/entry/aprobat', 'Admin\AdminEntryController@getAprobat');
+	Route::put('admin/entry/aprobat', 'Admin\AdminEntryController@putDisapprove');
 
-Route::get('admin/logout', 'Admin\AdminLoginController@getLogout');
+	Route::get('admin/entry', 'Admin\AdminEntryController@getIndex');
+	Route::put('admin/entry', 'Admin\AdminEntryController@putApprove');
 
-Route::resource('/admin/user', 'Admin\AdminUserController');
+	Route::resource('/admin/user', 'Admin\AdminUserController');
 
-Route::get('admin/login', 'Admin\AdminLoginController@getIndex');
+
+	Route::get('/admin/', 'Admin\AdminController@index');
+	Route::get('admin/logout', 'Admin\AdminLoginController@getLogout');
+});
+
 Route::post('admin/login', 'Admin\AdminLoginController@postIndex');
-
-
-Route::get('/admin/', 'Admin\AdminController@index');
+Route::get('admin/login', 'Admin\AdminLoginController@getIndex');

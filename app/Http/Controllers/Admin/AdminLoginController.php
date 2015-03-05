@@ -26,7 +26,7 @@ class AdminLoginController extends Controller {
         }
         else
         {
-            return view('admin.login.index');
+            return redirect('admin/login');
         }
 	}
 

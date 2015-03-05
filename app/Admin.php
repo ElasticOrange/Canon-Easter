@@ -13,4 +13,9 @@ class Admin extends Model {
         return $admin;
     }
 
+    public function isATeamManager()
+    {
+    	return false;
+    }
+
 }
