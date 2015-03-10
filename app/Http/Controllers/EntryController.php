@@ -1,7 +1,7 @@
 <?php namespace App\Http\Controllers;
 
 use App\Http\Requests;
-use App\Http\Controllers\Controller;
+use App\Http\Controllers;
 use Request;
 use App\Entry;
 //use Illuminate\Http\Request;
@@ -40,6 +40,6 @@ class EntryController extends Controller {
         $photo->move($this->photo_path, $new_name);
         $entry->photo = $new_name;
         $entry->save();
-        return 'ok';
+        return 'Te-ai inscris in concurs! Mult succes!';
     }
 }

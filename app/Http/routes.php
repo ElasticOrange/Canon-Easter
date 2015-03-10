@@ -11,10 +11,11 @@
 |
 */
 
-Route::get('entry', 'EntryController@getIndex');
+Route::get('/', 'EntryController@getIndex');
+Route::post('/', 'EntryController@getIndex');
 Route::post('entry', 'EntryController@postIndex');
 
-Route::group(['middleware' => 'manager'], function()
+Route::group(['middleware' => ['manager', 'csrf']], function()
 {
 	Route::get('admin/entry/photo/{id}', 'Admin\AdminEntryController@getImage');
 	Route::get('admin/entry/aprobat', 'Admin\AdminEntryController@getAprobat');
