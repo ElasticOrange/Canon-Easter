@@ -35,4 +35,5 @@ Route::post('admin/login', 'Admin\AdminLoginController@postIndex');
 Route::get('admin/login', 'Admin\AdminLoginController@getIndex');
 
 Route::get('form', 'FormController@create');
+Route::post('form', 'FormController@create');
 Route::post('form', 'FormController@store');
