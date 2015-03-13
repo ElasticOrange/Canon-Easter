@@ -25,7 +25,7 @@ class CreateEntryRequest extends Request {
           'nume' => 'required|min:3'
         , 'photo' => 'required|mimes:jpeg,bmp,png'
         , 'adresa' => 'required|min:3'
-        , 'email' => 'required'
+        , 'email' => 'required|email|unique:entries'
         , 'telefon' => 'required'
 		];
 	}

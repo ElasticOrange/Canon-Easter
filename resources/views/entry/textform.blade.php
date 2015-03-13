@@ -38,7 +38,7 @@
 
 {!! Form::close() !!}
 
-<div class="container">
+<div class="col-md-4">
 @if ($errors->any())
 	<ul class="alert alert-danger">
 		@foreach ($errors->all() as $error)
@@ -47,5 +47,6 @@
 	</ul>
 @endif
 </div>
+
 
 @stop
