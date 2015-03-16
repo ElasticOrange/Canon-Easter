@@ -31,12 +31,18 @@
             <p class="text-top">Inscrie-te in aplicatia "Drumul unei fotografii" cu datele tale, ataseaza o copie dupa bonul fiscal sau factura si vei primi imprimanta cadou.</p>
                 @yield('content')
         </div>
-        <div class="pasul1">
-           <span class="pasul1-bold">Pasul 1.</span>
-           <span class="pasul1-normal">Cumpara un <span class="red">DSLR Canon</span> de la partenerii autorizati</span>
-        </div>
-        <div class="canon-dslr">
-            <img src="/img/cannon_dslr.png" />
+        
+        <div class="wrapper">
+            <div class="pasul1">
+               <span class="pasul1-bold">Pasul 1.</span>
+               <span class="pasul1-normal">Cumpara un <span class="red">DSLR Canon</span> de la partenerii autorizati</span>
+            </div>
+            <div class="canon-dslr">
+                <img src="/img/cannon_dslr.png" />
+            </div>
+            <div class="vector1">
+                <img src="/img/vector_1.png" />
+            </div>
         </div>
         
         

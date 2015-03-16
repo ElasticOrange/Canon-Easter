@@ -75,12 +75,16 @@ html {
     text-align: center;
 }
 
+.wrapper {
+    position: relative;
+    clear: both;
+}
 .pasul1 {
     width: 188px;
     text-align: left;
     clear: both;
     padding-top: 50px;
-    float: left;
+    position: absolute;
 }
 
 .pasul1-bold {
@@ -106,9 +110,17 @@ html {
 }
 
 .canon-dslr {
-      width: 339px;
-      float: left;
-      margin-left: 40px;
-      padding-top: 50px;
-    
+    width: 339px;
+    float: left;
+    margin-left: 240px;
+    margin-top: 50px;
+    position: absolute;
+    z-index: 2;    
+}
+
+.vector1 {
+    position: absolute;
+    z-index: 1;
+    top: 150px;
+    left: 520px;
 }
