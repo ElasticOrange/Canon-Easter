@@ -1,10 +1,15 @@
+@font-face {
+    font-family: nevis;
+    src: url(/fonts/nevis.ttf;);
+}
+
 html { 
     background: url(/img/bg_lemn.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    font-family: comic-sans;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, nevis, sans-serif;
 }
 
 .content {
@@ -24,7 +29,6 @@ html {
 }
 
 .text-in-circle {
-    font-family: CenturyGothic;
     color: #ffffff;
     font-size: 43.692px;
     line-height: 39px;
@@ -43,7 +47,6 @@ html {
 }
 
 .text-top {
-    font-family: CenturyGothic;
     color: #000000;
     font-size: 27px;
     line-height: 39px;
@@ -51,22 +54,61 @@ html {
 }
 
 .form-control {
-    font-family: CenturyGothic;
     color: #000000;
     font-size: 27px;
     line-height: 39px;
     text-align: left;
     margin-bottom: 20px;
+    padding-left: 20px;
+    background-color: transparent;
+    border: 2px solid black;
 }
 
 .btn-trimite {
     background-color:  #cc0000;
     width: 256px;
     height: 72px;
-    font-family: CenturyGothic;
     color: #ffffff;
     font-size: 48.9px;
     font-weight: 400;
     line-height: 39px;
     text-align: center;
+}
+
+.pasul1 {
+    width: 188px;
+    text-align: left;
+    clear: both;
+    padding-top: 50px;
+    float: left;
+}
+
+.pasul1-bold {
+    color:  #000000;
+    font-size: 31.921px; /* Approximation due to font substitution */
+    font-weight: 700;
+
+}
+
+.pasul1-normal {
+    color:  #010101;
+    font-size: 25.725px; /* Approximation due to font substitution */
+    line-height: 28px; /* Approximation due to font substitution */
+    font-weight: 400;
+    margin-top: -35px;
+}
+
+.red {
+    color:  #cc0000;
+    font-size: 25.725px; /* Approximation due to font substitution */
+    line-height: 17.08px; /* Approximation due to font substitution */
+    font-weight: 700;
+}
+
+.canon-dslr {
+      width: 339px;
+      float: left;
+      margin-left: 40px;
+      padding-top: 50px;
+    
 }
