@@ -20,7 +20,7 @@ html {
     background-color: #cc0000;
     width: 598px;
     height: 598px;
-    display: inline-block;
+    float:left;
 }
 
 .text-in-circle {
@@ -37,8 +37,7 @@ html {
 
 .form-container {
     width: 403px;
-    border: 1px solid black;
-    display: inline-block;
+    float: left;
     margin-left: 140px;
     
 }
@@ -59,8 +58,6 @@ html {
     text-align: left;
     margin-bottom: 20px;
 }
-
-
 
 .btn-trimite {
     background-color:  #cc0000;
