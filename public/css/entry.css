@@ -5,48 +5,37 @@ html {
   -o-background-size: cover;
   background-size: cover;
 }
-#circle {
-    margin-top: 36px;
-    float: left;
-    position: relative;
+
+.content {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-#block_container
-{
+.circle {
+    margin-top: 36px auto;
+    float: left;
+    position: relative;
+    border-radius: 50%;
+    background-color: #cc0000;
+    width: 598px;
+    height: 598px;
+    display: inline-block;
+}
+
+.circle_text {
+    width: 515px;
+    height: 212px;
     text-align: center;
 }
 
-#circle, #form {
-/*    display:inline;*/
-    margin: 0 auto;
-}
-#text-top {
-    font-family: CenturyGothic;
-    color: #000000;
-    font-size: 27px;
-    font-weight: 400;
-    line-height: 39px;
-    text-align: left;
-    width: 403px;
-    height: 183px;
-}
-
-#form
-{
-    margin-left: 712px;
-    margin-top: 53px;
-/*    margin-right: 84px;*/
-}
-
-#circle_text {
-    position: absolute;
-    margin-top: -346px;
-    width: 515px;
-    height: 212px;
+.text-in-circle {
+    display: inline-block;
+    vertical-align: middle;
     font-family: CenturyGothic;
     color: #ffffff;
     font-size: 43.692px;
     font-weight: 400;
     line-height: 39px;
-    text-align: center;
+    transform: scaleY(1.0029);   
 }

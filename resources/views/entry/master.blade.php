@@ -23,16 +23,13 @@
     <!--        <p class="paragraf">Hello world! This is HTML5 Boilerplate.</p>-->
     
     
-    <div id="content">
-        <div id="block_container" style="width: 1200px; height: 621px;">
-            <div id="circle" style="width: 572px;">
-                <img src="/img/canon_circle.png" />
-                <div id="circle_text">Noul tau DSLR iti va aduce cadou o imprimanta foto Canon Selphy CP910.</div>
-            </div>
-            <div id="form" style="width: 403px; height: 183px;">
-                    <p id="text-top">Inscrie-te in aplicatia 
-"Drumul unei fotografii" cu datele tale, ataseaza o copie dupa bonul  fiscal sau factura si vei primi imprimanta cadou.</p>
-                
+    <div class="content">
+        <div class="block_header">
+            <div class="circle"></div>
+            <div class="circle_text"><span class="text-in-circle">Noul tau DSLR iti va aduce cadou o imprimanta foto Canon Selphy CP910.</span></div>
+            <div class="form-container">
+                <p class="text-top">Inscrie-te in aplicatia "Drumul unei fotografii" cu datele tale, ataseaza o copie dupa bonul fiscal sau factura si vei primi imprimanta cadou.</p>
+                @yield('content')
             </div>
         </div>
     </div>

@@ -2,43 +2,33 @@
 
 @section('content')
 
-<h1>Pagina de concurs</h1>
-
-<hr>
-
 {!! Form::open(['enctype' => 'multipart/form-data']) !!}
 	<div class="form-group">
-		{!! Form::label('nume', 'Nume:') !!}
-		{!! Form::text('nume', null, ['class' => 'form-control', 'placeholder' => 'Nume si Prenume']) !!}
+		{!! Form::text('nume', null, ['placeholder' => 'Nume']) !!}
 	</div>
 
 	<div class="form-group">
-		{!! Form::label('telefon', 'Telefon:') !!}
-		{!! Form::text('telefon', null, ['class' => 'form-control', 'placeholder' => 'Telefon']) !!} 
+		{!! Form::text('telefon', null, ['placeholder' => 'Telefon']) !!} 
 	</div>
 
 	<div class="form-group">
-		{!! Form::label('adresa', 'Adresa completa:') !!}
-		{!! Form::text('adresa', null, ['class' => 'form-control', 'placeholder' => 'Adresa completa']) !!}
+		{!! Form::text('adresa', null, ['placeholder' => 'Adresa completa']) !!}
 	</div>
 
 	<div class="form-group">
-		{!! Form::label('email', 'Email:') !!}
-		{!! Form::email('email', null, ['class' => 'form-control', 'placeholder' => 'Email']) !!}
+		{!! Form::email('email', null, ['placeholder' => 'Email']) !!}
 	</div>
 
 	<div class="form-group">
-		{!! Form::label('photo', 'Atasati poza bonului de casa') !!}
 		{!! Form::input('file', 'photo', null, ['placeholder' => 'Poza']) !!}
 	</div>
 
-	<div class="form-group col-md-1">
-		{!! Form::submit('Submit', ['class' => 'btn btn-primary form-control']) !!}
+	<div id="form-submit">
+		{!! Form::submit('Submit') !!}
 	</div>
 
 {!! Form::close() !!}
 
-<div class="col-md-4">
 @if ($errors->any())
 	<ul class="alert alert-danger">
 		@foreach ($errors->all() as $error)
@@ -46,7 +36,5 @@
 		@endforeach	
 	</ul>
 @endif
-</div>
-
 
 @stop
