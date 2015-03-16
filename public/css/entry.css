@@ -1,9 +1,10 @@
 html { 
-  background: url(/img/bg_lemn.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    background: url(/img/bg_lemn.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: comic-sans;
 }
 
 .content {
@@ -13,29 +14,25 @@ html {
 }
 
 .circle {
-    margin-top: 36px auto;
-    float: left;
+    margin-top: 36px;
     position: relative;
     border-radius: 50%;
     background-color: #cc0000;
     width: 598px;
     height: 598px;
-    display: inline-block;
-}
-
-.circle_text {
-    width: 515px;
-    height: 212px;
-    text-align: center;
+    
 }
 
 .text-in-circle {
-    display: inline-block;
-    vertical-align: middle;
     font-family: CenturyGothic;
     color: #ffffff;
     font-size: 43.692px;
-    font-weight: 400;
     line-height: 39px;
-    transform: scaleY(1.0029);   
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
 }
+
+
