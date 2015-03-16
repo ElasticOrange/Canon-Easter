@@ -1,0 +1,52 @@
+html { 
+  background: url(/img/bg_lemn.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#circle {
+    margin-top: 36px;
+    float: left;
+    position: relative;
+}
+
+#block_container
+{
+    text-align: center;
+}
+
+#circle, #form {
+/*    display:inline;*/
+    margin: 0 auto;
+}
+#text-top {
+    font-family: CenturyGothic;
+    color: #000000;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 39px;
+    text-align: left;
+    width: 403px;
+    height: 183px;
+}
+
+#form
+{
+    margin-left: 712px;
+    margin-top: 53px;
+/*    margin-right: 84px;*/
+}
+
+#circle_text {
+    position: absolute;
+    margin-top: -346px;
+    width: 515px;
+    height: 212px;
+    font-family: CenturyGothic;
+    color: #ffffff;
+    font-size: 43.692px;
+    font-weight: 400;
+    line-height: 39px;
+    text-align: center;
+}
