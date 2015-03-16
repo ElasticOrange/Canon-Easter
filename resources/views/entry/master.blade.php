@@ -24,14 +24,13 @@
     
     
     <div class="content">
-        <div class="block_header">
-            <div class="circle">
-                <p class="text-in-circle">Noul tau DSLR iti va aduce cadou o imprimanta foto Canon Selphy CP910.</p>
-            </div>
-            <div class="form-container">
-                <p class="text-top">Inscrie-te in aplicatia "Drumul unei fotografii" cu datele tale, ataseaza o copie dupa bonul fiscal sau factura si vei primi imprimanta cadou.</p>
+        <div class="circle">
+            <p class="text-in-circle">Noul tau DSLR iti va aduce cadou o imprimanta foto Canon Selphy CP910.</p>
+        </div>
+        
+        <div class="form-container">
+            <p class="text-top">Inscrie-te in aplicatia "Drumul unei fotografii" cu datele tale, ataseaza o copie dupa bonul fiscal sau factura si vei primi imprimanta cadou.</p>
                 @yield('content')
-            </div>
         </div>
     </div>
     
