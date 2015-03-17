@@ -1,7 +1,7 @@
 @extends('entry.master')
 
 @section('content')
-<form action="/entry" enctype="multipart/form-data" method="post">
+<form action="/entry" enctype="multipart/form-data" data-form="true "method="post">
     <input type="text" name="nume" class="form-control" placeholder="Nume">
 
 	<input type="tel" name="telefon" class="form-control" placeholder="Telefon">
@@ -27,5 +27,9 @@
 		@endforeach	
 	</ul>
 @endif
+
+<!-- @section('js')
+<script src="/js/entry/form.js"></script>
+@stop -->
 
 @stop
