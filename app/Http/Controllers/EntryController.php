@@ -1,11 +1,9 @@
 <?php namespace App\Http\Controllers;
 
-use App\Http\Requests;
-use App\Http\Controllers;
-use Request;
+use App\Http\Requests\CreateEntryRequest;
+use App\Http\Controllers\Controller;
 use App\Entry;
-//use Illuminate\Http\Request;
-use Symfony\Component\HttpFoundation\File\UploadedFile;
+use Request;
 
 class EntryController extends Controller {
     
@@ -21,25 +19,18 @@ class EntryController extends Controller {
 		return view('entry.formentry');
 	}
 
-    public function postIndex()
+    public function postIndex(CreateEntryRequest $request)
     {
 
-        $entry = new Entry();
-
-        $entry->approved = false;
-        $entry->nume = Request::input('nume');
-        $entry->prenume = Request::input('prenume');
-        $entry->email = Request::input('email');
-        $entry->adresa = Request::input('adresa');
-        $entry->telefon = Request::input('telefon');
-
-        $photo = Request::file('photo');
-        //dd($photo);
+        $input = $request->all();
+		
+		$photo = Request::file('photo');
         $new_name = md5(microtime()) .'.png';
-
         $photo->move($this->photo_path, $new_name);
-        $entry->photo = $new_name;
-        $entry->save();
-        return 'Te-ai inscris in concurs! Mult succes!';
+        $input['photo'] = ($photo = $new_name);
+
+		Entry::create($input);
+
+		return $input;
     }
 }
