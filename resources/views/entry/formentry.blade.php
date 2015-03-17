@@ -19,4 +19,13 @@
 	
 	<button type="submit" class="btn-trimite">Trimite</button>
 </form>
+
+@if ($errors->any())
+	<ul class="alerta-danger">
+		@foreach ($errors->all() as $error)
+			<li>{{ $error }}</li>
+		@endforeach	
+	</ul>
+@endif
+
 @stop

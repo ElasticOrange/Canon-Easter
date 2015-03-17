@@ -229,3 +229,8 @@ html {
     right: 250px;
     top: 508px;
 }
+
+.alerta-danger {
+    color: red;
+    font-weight: 600;
+}
