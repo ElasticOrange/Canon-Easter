@@ -207,3 +207,10 @@ html {
     position: absolute;
     top: 934px;
 }
+
+.text_footer {
+    color: #000000;
+    font-size: 16.2px;
+    line-height: 17.08px;
+    text-align: left;
+}
