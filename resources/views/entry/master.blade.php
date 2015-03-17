@@ -48,9 +48,9 @@
             </div>
             <div class="pasul2">
                 <span class="pasul1-bold">Pasul 2.</span>
-                <span class="pasul1-normal">
+                <p class="pasul2-normal">
                    Intra in aplicatia <span class="red">"Drumul unei fotografii"</span> si incarca o fotografie cu bonul fiscal
-                </span>
+                </p>
             </div>
         </div>
         
