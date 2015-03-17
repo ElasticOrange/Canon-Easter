@@ -135,7 +135,6 @@ html {
 .pasul2 {
     width: 284px;
     text-align: left;
-    clear: both;
     padding-top: 50px;
     position: absolute;
     left: 806px;
@@ -155,3 +154,30 @@ html {
     top: 310px;
     left: 458px;
 }
+
+.pasul3 {
+    position: absolute;
+    top: 590px;
+}
+
+.pasul3-normal {
+    color: #010101;
+    font-size: 25.725px;
+    line-height: 28px;
+    font-weight: 400;
+    margin-top: -2px;
+    width: 175px;
+}
+
+.canon_selphy {
+    position: absolute;
+    top: 539px;
+    left: 238px;
+}
+
+.vector3 {
+    position: absolute;
+    top: 743px;
+    left: 558px;
+}
+

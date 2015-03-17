@@ -47,13 +47,25 @@
                 <img src="/img/bon_de_casa.png" />
             </div>
             <div class="pasul2">
-                <span class="pasul1-bold">Pasul 2.</span>
+                <span class="pasul1-bold">Pasul 3.</span>
                 <p class="pasul2-normal">
                    Intra in aplicatia <span class="red">"Drumul unei fotografii"</span> si incarca o fotografie cu bonul fiscal
                 </p>
             </div>
             <div class="vector2">
                 <img src="/img/vector_2.png" />
+            </div>
+            <div class="pasul3">
+                <span class="pasul1-bold">Pasul 2.</span>
+                <p class="pasul3-normal">
+                   Imprimanta <span class="red">Canon Selphy CP910</span> va ajunge la tine.
+                </p>
+            </div>
+            <div class="canon_selphy">
+                <img src="/img/canon_selphy.png" />
+            </div>
+            <div class="vector3">
+                <img src="/img/vector_3.png" />
             </div>
         </div>
         
