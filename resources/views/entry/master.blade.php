@@ -52,6 +52,9 @@
                    Intra in aplicatia <span class="red">"Drumul unei fotografii"</span> si incarca o fotografie cu bonul fiscal
                 </p>
             </div>
+            <div class="vector2">
+                <img src="/img/vector_2.png" />
+            </div>
         </div>
         
         
