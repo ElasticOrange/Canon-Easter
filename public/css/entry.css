@@ -214,3 +214,12 @@ html {
     line-height: 17.08px;
     text-align: left;
 }
+.pitit {
+    opacity: 0;
+    top: 500px;
+    right: 240px;
+    width: 361px;
+    height: 37px;
+    position: absolute;
+    z-index: 2;
+}
