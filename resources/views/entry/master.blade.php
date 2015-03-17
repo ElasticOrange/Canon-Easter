@@ -28,14 +28,14 @@
         </div>
         
         <div class="form-container">
-            <p class="text-top">Inscrie-te in aplicatia "Drumul unei fotografii" cu datele tale, ataseaza o copie dupa bonul fiscal sau factura si vei primi imprimanta cadou.</p>
+            <p class="text-top">Inscrie-te in aplicatia <span class="bold">"Drumul unei fotografii"</span> cu datele tale, ataseaza o copie dupa bonul fiscal sau factura si vei primi imprimanta cadou.</p>
                 @yield('content')
         </div>
         
         <div class="wrapper">
             <div class="pasul1">
                <span class="pasul1-bold">Pasul 1.</span>
-               <span class="pasul1-normal">Cumpara un <span class="red">DSLR Canon</span> de la partenerii autorizati</span>
+               <span class="pasul1-normal">Cumpara un <span class="red">DSLR Canon</span> de la partenerii Canon</span>
             </div>
             <div class="canon-dslr">
                 <img src="/img/cannon_dslr.png" />
@@ -47,18 +47,18 @@
                 <img src="/img/bon_de_casa.png" />
             </div>
             <div class="pasul2">
-                <span class="pasul1-bold">Pasul 3.</span>
+                <span class="pasul1-bold">Pasul 2.</span>
                 <p class="pasul2-normal">
-                   Intra in aplicatia <span class="red">"Drumul unei fotografii"</span> si incarca o fotografie cu bonul fiscal
+                   Intra in aplicatia <span class="red">"Drumul unei fotografii"</span> si incarca o fotografie cu bonul fiscal/factura
                 </p>
             </div>
             <div class="vector2">
                 <img src="/img/vector_2.png" />
             </div>
             <div class="pasul3">
-                <span class="pasul1-bold">Pasul 2.</span>
+                <span class="pasul1-bold">Pasul 3.</span>
                 <p class="pasul3-normal">
-                   Imprimanta <span class="red">Canon Selphy CP910</span> va ajunge la tine.
+                   Imprimanta <span class="red">Canon Selphy CP910</span> va ajunge la tine
                 </p>
             </div>
             <div class="canon_selphy">
@@ -66,6 +66,29 @@
             </div>
             <div class="vector3">
                 <img src="/img/vector_3.png" />
+            </div>
+            <div class="polaroid">
+                <img src="/img/polaroid.png" />
+            </div>
+            <div class="pasul4">
+                <span class="pasul1-bold">Pasul 4.</span>
+                <p class="pasul3-normal">
+                   Imprima-ti fotografiile!
+                </p>
+            </div>
+            <div class="footer-text">
+                <p class="text_footer">
+                    Perioada promotie: 1-19 aprilie 2015
+                </p>
+                <p class="text_footer">
+                    Produsele participante in promotie: toate echipamentele DSLR Canon, cu exceptia EOS 1200D.
+                </p>
+                <p class="text_footer">
+                    Regulementul oficial: https://www.facebook.com/canonromania
+                </p>
+            </div>
+            <div class="canon_logo">
+                <img src="/img/canon_logo.png" />
             </div>
         </div>
         

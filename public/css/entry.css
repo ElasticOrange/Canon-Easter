@@ -181,3 +181,29 @@ html {
     left: 558px;
 }
 
+.polaroid {
+    position: absolute;
+    top: 320px;
+    left: 620px;
+}
+
+.pasul4 {
+    position: absolute;
+    top: 800px;
+    left: 540px;
+}
+
+.canon_logo {
+    position: absolute;
+    top: 860px;
+    left: 780px;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.footer-text {
+    position: absolute;
+    top: 934px;
+}
