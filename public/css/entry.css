@@ -124,3 +124,20 @@ html {
     top: 150px;
     left: 520px;
 }
+
+.bon_de_casa {
+    position: absolute;
+    width: 134px;
+    left: 635px;
+    top: 160px;
+}
+
+.pasul2 {
+    width: 284px;
+    text-align: left;
+    clear: both;
+    padding-top: 50px;
+    position: absolute;
+    left: 806px;
+    top: 73px;
+}

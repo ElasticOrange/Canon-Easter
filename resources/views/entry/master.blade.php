@@ -43,6 +43,15 @@
             <div class="vector1">
                 <img src="/img/vector_1.png" />
             </div>
+            <div class="bon_de_casa">
+                <img src="/img/bon_de_casa.png" />
+            </div>
+            <div class="pasul2">
+                <span class="pasul1-bold">Pasul 2.</span>
+                <span class="pasul1-normal">
+                   Intra in aplicatia <span class="red">"Drumul unei fotografii"</span> si incarca o fotografie cu bonul fiscal
+                </span>
+            </div>
         </div>
         
         
