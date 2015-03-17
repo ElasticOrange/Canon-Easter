@@ -10,6 +10,10 @@
 
 	<input type="email" name="email" class="form-control" placeholder="Email">
     
+    <div class="photo_pic">
+        <img src="/img/photo_pic.png" />
+    </div>
+    
     <label for="inputphoto"><input class="form-control" placeholder="Fotografie bon/factura"></label>
     <input type="file" class="pitit" name="photo" id="inputphoto">
 	

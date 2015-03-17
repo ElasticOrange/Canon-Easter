@@ -223,3 +223,9 @@ html {
     position: absolute;
     z-index: 2;
 }
+
+.photo_pic {
+    position: absolute;
+    right: 250px;
+    top: 508px;
+}
