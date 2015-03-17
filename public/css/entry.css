@@ -217,7 +217,7 @@ html {
 .pitit {
     opacity: 0;
     top: 500px;
-    right: 240px;
+    left: 740px;
     width: 361px;
     height: 37px;
     position: absolute;
@@ -226,8 +226,9 @@ html {
 
 .photo_pic {
     position: absolute;
-    right: 250px;
+    /*left: 1180px;*/
     top: 508px;
+    padding-left: 300px;
 }
 
 .alerta-danger {
