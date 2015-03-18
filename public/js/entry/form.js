@@ -1,5 +1,14 @@
 $(document).ready(function() {
     $('[data-buton=true]').click(ajax_submit);
+    $('[data-photo=true]').change(photo_name);
+    
+    function photo_name()
+    {   
+        debugger;
+        var photo = $('[data-photo=true]')[0].files[0];
+        name = photo.name;
+        $('[data-photo2=true]').attr("placeholder", name);
+    };
     
     function ajax_submit(e)
     {
@@ -61,10 +70,6 @@ $(document).ready(function() {
                     {
                         $('[data-photo2=true]').addClass("warning");
                         console.log('Nu exista photo');
-                    }
-                    else
-                    {
-                        $('[data-photo2=true]').addClass("photoname");
                     }
                     
                     console.log(p);
