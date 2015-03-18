@@ -14,7 +14,7 @@
         <img src="/img/photo_pic.png" />
     </div>
     
-    <label for="inputphoto"><input class="form-control" data-photo2="true" placeholder="Fotografie bon/factura"></label>
+    <label for="inputphoto"><input class="form-control" data-photo2="true" readonly placeholder="Fotografie bon/factura"></label>
     <input type="file" data-photo="true" class="pitit" name="photo" id="inputphoto">
 	
 	<button type="submit" data-buton="true" class="btn-trimite">Trimite</button>

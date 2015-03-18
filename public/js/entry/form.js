@@ -4,10 +4,9 @@ $(document).ready(function() {
     
     function photo_name()
     {   
-        debugger;
         var photo = $('[data-photo=true]')[0].files[0];
         name = photo.name;
-        $('[data-photo2=true]').attr("placeholder", name);
+        $('[data-photo2=true]').val(name);
     };
     
     function ajax_submit(e)
