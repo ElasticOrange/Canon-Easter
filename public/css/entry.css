@@ -13,13 +13,21 @@ html {
 }
 
 .content {
+    margin-top: 0px;
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    -ms-transform: scale(0.7,0.7); /* IE 9 */
+    -webkit-transform: scale(0.7,0.7); /* Safari */
+    -moz-transform: scale(0.7,0.7); /* Mozilla*/
+    transform: scale(0.7,0.7);
+    -ms-transform-origin: top; /* IE 9 */
+    -webkit-transform-origin: top; /* Safari */
+    -moz-transform-origin: top; /* Mozilla*/
+    transform-origin: top;
 }
 
 .circle {
-    margin-top: 36px;
     position: relative;
     border-radius: 50%;
     background-color: #cc0000;
@@ -80,7 +88,7 @@ html {
     clear: both;
 }
 .pasul1 {
-    width: 188px;
+    width: 218px;
     text-align: left;
     clear: both;
     padding-top: 50px;
@@ -111,11 +119,9 @@ html {
 
 .canon-dslr {
     width: 339px;
-    float: left;
-    margin-left: 240px;
-    margin-top: 50px;
     position: absolute;
-    z-index: 2;    
+    left: 240px;
+    top: 45px;
 }
 
 .vector1 {
@@ -245,16 +251,3 @@ html {
     font-weight: 600;
 }
 
-@media only screen and (min-width:700px) and (max-width: 1200px)  {
-.content {
-    width: 700px;
-}
-    
-.vector1 {
-    top: 280px;
-    left: 350px;
-    transform: rotate(25deg);
-}
-    
-    
-}
