@@ -121,8 +121,8 @@ html {
 .vector1 {
     position: absolute;
     z-index: 1;
-    top: 150px;
-    left: 520px;
+    top: 143px;
+    left: 570px;
 }
 
 .bon_de_casa {
@@ -234,4 +234,18 @@ html {
 .alerta-danger {
     color: red;
     font-weight: 600;
+}
+
+@media only screen and (min-width:700px) and (max-width: 1200px)  {
+.content {
+    width: 700px;
+}
+    
+.vector1 {
+    top: 280px;
+    left: 350px;
+    transform: rotate(25deg);
+}
+    
+    
 }

@@ -44,7 +44,7 @@
                 <img src="/img/vector_1.png" />
             </div>
             <div class="bon_de_casa">
-                <img src="/img/bon_de_casa.png" />
+                <img src="/img/bon_de_casa2.png" />
             </div>
             <div class="pasul2">
                 <span class="pasul1-bold">Pasul 2.</span>
@@ -62,18 +62,18 @@
                 </p>
             </div>
             <div class="canon_selphy">
-                <img src="/img/canon_selphy.png" />
+                <img src="/img/canon_selphy2.png" />
             </div>
             <div class="vector3">
                 <img src="/img/vector_3.png" />
             </div>
             <div class="polaroid">
-                <img src="/img/polaroid.png" />
+                <img src="/img/polaroid2.png" />
             </div>
             <div class="pasul4">
                 <span class="pasul1-bold">Pasul 4.</span>
                 <p class="pasul3-normal">
-                   Imprima-ti fotografiile!
+                   Imprima-ti acasa fotografiile la calitate de laborator!
                 </p>
             </div>
             <div class="footer-text">

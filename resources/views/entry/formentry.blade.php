@@ -2,13 +2,13 @@
 
 @section('content')
 <form action="/entry" enctype="multipart/form-data" method="post">
-    <input type="text" name="nume" class="form-control" placeholder="Nume">
+    <input type="text"  value="{{ old('nume') }}" name="nume" class="form-control" placeholder="Nume Prenume">
 
-	<input type="tel" name="telefon" class="form-control" placeholder="Telefon">
+	<input type="tel" value="{{ old('telefon') }}" name="telefon" class="form-control" placeholder="Telefon">
 
-	<input type="text" name="adresa" class="form-control" placeholder="Adresa">
+	<input type="text" value="{{ old('adresa') }}" name="adresa" class="form-control" placeholder="Adresa de livrare">
 
-	<input type="email" name="email" class="form-control" placeholder="Email">
+	<input type="email" value="{{ old('email') }}" name="email" class="form-control" placeholder="Adresa de mail">
     
     <div class="photo_pic">
         <img src="/img/photo_pic.png" />
