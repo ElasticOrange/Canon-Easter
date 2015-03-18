@@ -72,7 +72,7 @@
             </div>
             <div class="pasul4">
                 <span class="pasul1-bold">Pasul 4.</span>
-                <p class="pasul3-normal">
+                <p class="pasul4-normal">
                    Imprima-ti acasa fotografiile la calitate de laborator!
                 </p>
             </div>
