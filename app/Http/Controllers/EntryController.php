@@ -31,6 +31,9 @@ class EntryController extends Controller {
 
 		Entry::create($input);
 
-		return $input;
+		return response()->json([
+                                  'status' => 'OK'
+                                , 'message' => 'Formul nu a fost completat'
+                                ]);
     }
 }

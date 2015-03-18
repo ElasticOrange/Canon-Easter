@@ -91,6 +91,9 @@
                 <img src="/img/canon_logo.png" />
             </div>
         </div>
+        <div class="invizibil">
+            Felicitari, te-ai inscris cu success!
+        </div>
         
         
     </div>
@@ -110,4 +113,5 @@
         r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
         ga('create','UA-XXXXX-X','auto');ga('send','pageview');
     </script>
+    @yield('js')
 </html>
