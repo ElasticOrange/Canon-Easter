@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
+use App\Admin;
 
 class DatabaseSeeder extends Seeder {
 
@@ -15,6 +16,18 @@ class DatabaseSeeder extends Seeder {
 		Model::unguard();
 
 		// $this->call('UserTableSeeder');
+		$this->call('AdminsTableSeeder');
 	}
 
+}
+
+class AdminsTableSeeder extends Seeder {
+    public function run()
+    {
+    	DB::table('admins')->delete();
+    	Admin::create([
+    		  'username' => 'admin'
+    		, 'password' => md5('admin') 
+    		  ]);
+    }
 }
